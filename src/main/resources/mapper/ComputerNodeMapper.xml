@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dragonball.mapper.ComputerNodeMapper">
+  <resultMap id="BaseResultMap" type="com.dragonball.model.ComputerNode">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="node_id" jdbcType="SMALLINT" property="nodeId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="server_tag" jdbcType="VARCHAR" property="serverTag" />
+    <result column="category" jdbcType="CHAR" property="category" />
+    <result column="state" jdbcType="CHAR" property="state" />
+  </resultMap>
+</mapper>
