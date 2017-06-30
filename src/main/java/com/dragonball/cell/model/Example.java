@@ -1,4 +1,4 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import javax.persistence.*;
 
@@ -143,5 +143,4 @@ public class Example {
      */
     public void setSpecification(String specification) {
         this.specification = specification == null ? null : specification.trim();
-    }
-}
+  
