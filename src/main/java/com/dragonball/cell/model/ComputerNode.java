@@ -1,122 +1,122 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import javax.persistence.*;
 
 @Table(name = "computer_node")
 public class ComputerNode {
     /**
-     * Ö÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½
      */
     @Id
     @Column(name = "node_id")
     private Short nodeId;
 
     /**
-     * ½ÚµãÃû³Æ
+     * ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private String name;
 
     /**
-     * ·þÎñ±àºÅ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     @Column(name = "server_tag")
     private String serverTag;
 
     /**
-     * ½ÚµãÀàÐÍ
+     * ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private String category;
 
     /**
-     * ½Úµã×´Ì¬
+     * ï¿½Úµï¿½×´Ì¬
      */
     private String state;
 
     /**
-     * »ñÈ¡Ö÷¼ü
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return node_id - Ö÷¼ü
+     * @return node_id - ï¿½ï¿½ï¿½ï¿½
      */
     public Short getNodeId() {
         return nodeId;
     }
 
     /**
-     * ÉèÖÃÖ÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param nodeId Ö÷¼ü
+     * @param nodeId ï¿½ï¿½ï¿½ï¿½
      */
     public void setNodeId(Short nodeId) {
         this.nodeId = nodeId;
     }
 
     /**
-     * »ñÈ¡½ÚµãÃû³Æ
+     * ï¿½ï¿½È¡ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return name - ½ÚµãÃû³Æ
+     * @return name - ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public String getName() {
         return name;
     }
 
     /**
-     * ÉèÖÃ½ÚµãÃû³Æ
+     * ï¿½ï¿½ï¿½Ã½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param name ½ÚµãÃû³Æ
+     * @param name ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
     }
 
     /**
-     * »ñÈ¡·þÎñ±àºÅ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return server_tag - ·þÎñ±àºÅ
+     * @return server_tag - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public String getServerTag() {
         return serverTag;
     }
 
     /**
-     * ÉèÖÃ·þÎñ±àºÅ
+     * ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param serverTag ·þÎñ±àºÅ
+     * @param serverTag ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setServerTag(String serverTag) {
         this.serverTag = serverTag == null ? null : serverTag.trim();
     }
 
     /**
-     * »ñÈ¡½ÚµãÀàÐÍ
+     * ï¿½ï¿½È¡ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return category - ½ÚµãÀàÐÍ
+     * @return category - ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public String getCategory() {
         return category;
     }
 
     /**
-     * ÉèÖÃ½ÚµãÀàÐÍ
+     * ï¿½ï¿½ï¿½Ã½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param category ½ÚµãÀàÐÍ
+     * @param category ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setCategory(String category) {
         this.category = category == null ? null : category.trim();
     }
 
     /**
-     * »ñÈ¡½Úµã×´Ì¬
+     * ï¿½ï¿½È¡ï¿½Úµï¿½×´Ì¬
      *
-     * @return state - ½Úµã×´Ì¬
+     * @return state - ï¿½Úµï¿½×´Ì¬
      */
     public String getState() {
         return state;
     }
 
     /**
-     * ÉèÖÃ½Úµã×´Ì¬
+     * ï¿½ï¿½ï¿½Ã½Úµï¿½×´Ì¬
      *
-     * @param state ½Úµã×´Ì¬
+     * @param state ï¿½Úµï¿½×´Ì¬
      */
     public void setState(String state) {
         this.state = state == null ? null : state.trim();

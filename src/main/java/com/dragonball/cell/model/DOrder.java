@@ -1,4 +1,4 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import java.util.Date;
 import javax.persistence.*;
@@ -6,236 +6,236 @@ import javax.persistence.*;
 @Table(name = "d_order")
 public class DOrder {
     /**
-     * Ö÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½
      */
     @Id
     @Column(name = "order_id")
     private Integer orderId;
 
     /**
-     * ¶©µ¥±àºÅ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     @Column(name = "order_tag")
     private String orderTag;
 
     /**
-     * ¹ºÂòÕËºÅ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Ëºï¿½
      */
     private String username;
 
     /**
-     * Ìá½»Ê±¼ä
+     * ï¿½á½»Ê±ï¿½ï¿½
      */
     @Column(name = "create_date")
     private Date createDate;
 
     /**
-     * ÊÇ·ñÖ§¸¶
+     * ï¿½Ç·ï¿½Ö§ï¿½ï¿½
      */
     private String pay;
 
     /**
-     * ¿ªÊ¼Ê±¼ä
+     * ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
      */
     @Column(name = "from_date")
     private Date fromDate;
 
     /**
-     * µ½ÆÚÊ±¼ä
+     * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      */
     @Column(name = "to_date")
     private Date toDate;
 
     /**
-     * ÕÛ¿Û
+     * ï¿½Û¿ï¿½
      */
     private Byte discount;
 
     /**
-     * ¶©µ¥½ð¶î
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private Integer amount;
 
     /**
-     * ±¸×¢
+     * ï¿½ï¿½×¢
      */
     private String comment;
 
     /**
-     * »ñÈ¡Ö÷¼ü
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return order_id - Ö÷¼ü
+     * @return order_id - ï¿½ï¿½ï¿½ï¿½
      */
     public Integer getOrderId() {
         return orderId;
     }
 
     /**
-     * ÉèÖÃÖ÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param orderId Ö÷¼ü
+     * @param orderId ï¿½ï¿½ï¿½ï¿½
      */
     public void setOrderId(Integer orderId) {
         this.orderId = orderId;
     }
 
     /**
-     * »ñÈ¡¶©µ¥±àºÅ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return order_tag - ¶©µ¥±àºÅ
+     * @return order_tag - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public String getOrderTag() {
         return orderTag;
     }
 
     /**
-     * ÉèÖÃ¶©µ¥±àºÅ
+     * ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param orderTag ¶©µ¥±àºÅ
+     * @param orderTag ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setOrderTag(String orderTag) {
         this.orderTag = orderTag == null ? null : orderTag.trim();
     }
 
     /**
-     * »ñÈ¡¹ºÂòÕËºÅ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ëºï¿½
      *
-     * @return username - ¹ºÂòÕËºÅ
+     * @return username - ï¿½ï¿½ï¿½ï¿½ï¿½Ëºï¿½
      */
     public String getUsername() {
         return username;
     }
 
     /**
-     * ÉèÖÃ¹ºÂòÕËºÅ
+     * ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½Ëºï¿½
      *
-     * @param username ¹ºÂòÕËºÅ
+     * @param username ï¿½ï¿½ï¿½ï¿½ï¿½Ëºï¿½
      */
     public void setUsername(String username) {
         this.username = username == null ? null : username.trim();
     }
 
     /**
-     * »ñÈ¡Ìá½»Ê±¼ä
+     * ï¿½ï¿½È¡ï¿½á½»Ê±ï¿½ï¿½
      *
-     * @return create_date - Ìá½»Ê±¼ä
+     * @return create_date - ï¿½á½»Ê±ï¿½ï¿½
      */
     public Date getCreateDate() {
         return createDate;
     }
 
     /**
-     * ÉèÖÃÌá½»Ê±¼ä
+     * ï¿½ï¿½ï¿½ï¿½ï¿½á½»Ê±ï¿½ï¿½
      *
-     * @param createDate Ìá½»Ê±¼ä
+     * @param createDate ï¿½á½»Ê±ï¿½ï¿½
      */
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
 
     /**
-     * »ñÈ¡ÊÇ·ñÖ§¸¶
+     * ï¿½ï¿½È¡ï¿½Ç·ï¿½Ö§ï¿½ï¿½
      *
-     * @return pay - ÊÇ·ñÖ§¸¶
+     * @return pay - ï¿½Ç·ï¿½Ö§ï¿½ï¿½
      */
     public String getPay() {
         return pay;
     }
 
     /**
-     * ÉèÖÃÊÇ·ñÖ§¸¶
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Ö§ï¿½ï¿½
      *
-     * @param pay ÊÇ·ñÖ§¸¶
+     * @param pay ï¿½Ç·ï¿½Ö§ï¿½ï¿½
      */
     public void setPay(String pay) {
         this.pay = pay == null ? null : pay.trim();
     }
 
     /**
-     * »ñÈ¡¿ªÊ¼Ê±¼ä
+     * ï¿½ï¿½È¡ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
      *
-     * @return from_date - ¿ªÊ¼Ê±¼ä
+     * @return from_date - ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
      */
     public Date getFromDate() {
         return fromDate;
     }
 
     /**
-     * ÉèÖÃ¿ªÊ¼Ê±¼ä
+     * ï¿½ï¿½ï¿½Ã¿ï¿½Ê¼Ê±ï¿½ï¿½
      *
-     * @param fromDate ¿ªÊ¼Ê±¼ä
+     * @param fromDate ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
      */
     public void setFromDate(Date fromDate) {
         this.fromDate = fromDate;
     }
 
     /**
-     * »ñÈ¡µ½ÆÚÊ±¼ä
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      *
-     * @return to_date - µ½ÆÚÊ±¼ä
+     * @return to_date - ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      */
     public Date getToDate() {
         return toDate;
     }
 
     /**
-     * ÉèÖÃµ½ÆÚÊ±¼ä
+     * ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      *
-     * @param toDate µ½ÆÚÊ±¼ä
+     * @param toDate ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      */
     public void setToDate(Date toDate) {
         this.toDate = toDate;
     }
 
     /**
-     * »ñÈ¡ÕÛ¿Û
+     * ï¿½ï¿½È¡ï¿½Û¿ï¿½
      *
-     * @return discount - ÕÛ¿Û
+     * @return discount - ï¿½Û¿ï¿½
      */
     public Byte getDiscount() {
         return discount;
     }
 
     /**
-     * ÉèÖÃÕÛ¿Û
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Û¿ï¿½
      *
-     * @param discount ÕÛ¿Û
+     * @param discount ï¿½Û¿ï¿½
      */
     public void setDiscount(Byte discount) {
         this.discount = discount;
     }
 
     /**
-     * »ñÈ¡¶©µ¥½ð¶î
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return amount - ¶©µ¥½ð¶î
+     * @return amount - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public Integer getAmount() {
         return amount;
     }
 
     /**
-     * ÉèÖÃ¶©µ¥½ð¶î
+     * ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param amount ¶©µ¥½ð¶î
+     * @param amount ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setAmount(Integer amount) {
         this.amount = amount;
     }
 
     /**
-     * »ñÈ¡±¸×¢
+     * ï¿½ï¿½È¡ï¿½ï¿½×¢
      *
-     * @return comment - ±¸×¢
+     * @return comment - ï¿½ï¿½×¢
      */
     public String getComment() {
         return comment;
     }
 
     /**
-     * ÉèÖÃ±¸×¢
+     * ï¿½ï¿½ï¿½Ã±ï¿½×¢
      *
-     * @param comment ±¸×¢
+     * @param comment ï¿½ï¿½×¢
      */
     public void setComment(String comment) {
         this.comment = comment == null ? null : comment.trim();

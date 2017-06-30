@@ -1,99 +1,99 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import javax.persistence.*;
 
 public class Mirror {
     /**
-     * Ö÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½
      */
     @Id
     @Column(name = "mirror_id")
     private Short mirrorId;
 
     /**
-     * ¾µÏñÃû³Æ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private String name;
 
     /**
-     * ¾µÏñÏµÍ³
+     * ï¿½ï¿½ï¿½ï¿½ÏµÍ³
      */
     @Column(name = "mirror_system")
     private String mirrorSystem;
 
     /**
-     * ¾µÏñ iso ÎÄ¼þ
+     * ï¿½ï¿½ï¿½ï¿½ iso ï¿½Ä¼ï¿½
      */
     @Column(name = "iso_file")
     private String isoFile;
 
     /**
-     * »ñÈ¡Ö÷¼ü
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return mirror_id - Ö÷¼ü
+     * @return mirror_id - ï¿½ï¿½ï¿½ï¿½
      */
     public Short getMirrorId() {
         return mirrorId;
     }
 
     /**
-     * ÉèÖÃÖ÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param mirrorId Ö÷¼ü
+     * @param mirrorId ï¿½ï¿½ï¿½ï¿½
      */
     public void setMirrorId(Short mirrorId) {
         this.mirrorId = mirrorId;
     }
 
     /**
-     * »ñÈ¡¾µÏñÃû³Æ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return name - ¾µÏñÃû³Æ
+     * @return name - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public String getName() {
         return name;
     }
 
     /**
-     * ÉèÖÃ¾µÏñÃû³Æ
+     * ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param name ¾µÏñÃû³Æ
+     * @param name ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
     }
 
     /**
-     * »ñÈ¡¾µÏñÏµÍ³
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ÏµÍ³
      *
-     * @return mirror_system - ¾µÏñÏµÍ³
+     * @return mirror_system - ï¿½ï¿½ï¿½ï¿½ÏµÍ³
      */
     public String getMirrorSystem() {
         return mirrorSystem;
     }
 
     /**
-     * ÉèÖÃ¾µÏñÏµÍ³
+     * ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½ÏµÍ³
      *
-     * @param mirrorSystem ¾µÏñÏµÍ³
+     * @param mirrorSystem ï¿½ï¿½ï¿½ï¿½ÏµÍ³
      */
     public void setMirrorSystem(String mirrorSystem) {
         this.mirrorSystem = mirrorSystem == null ? null : mirrorSystem.trim();
     }
 
     /**
-     * »ñÈ¡¾µÏñ iso ÎÄ¼þ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ iso ï¿½Ä¼ï¿½
      *
-     * @return iso_file - ¾µÏñ iso ÎÄ¼þ
+     * @return iso_file - ï¿½ï¿½ï¿½ï¿½ iso ï¿½Ä¼ï¿½
      */
     public String getIsoFile() {
         return isoFile;
     }
 
     /**
-     * ÉèÖÃ¾µÏñ iso ÎÄ¼þ
+     * ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½ iso ï¿½Ä¼ï¿½
      *
-     * @param isoFile ¾µÏñ iso ÎÄ¼þ
+     * @param isoFile ï¿½ï¿½ï¿½ï¿½ iso ï¿½Ä¼ï¿½
      */
     public void setIsoFile(String isoFile) {
         this.isoFile = isoFile == null ? null : isoFile.trim();

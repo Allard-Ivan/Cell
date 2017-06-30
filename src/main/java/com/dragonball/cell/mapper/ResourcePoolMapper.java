@@ -1,7 +1,7 @@
-package com.dragonball.mapper;
+package com.dragonball.cell.mapper;
 
-import com.dragonball.model.ResourcePool;
-import com.dragonball.util.MyMapper;
+import com.dragonball.cell.model.ResourcePool;
+import com.dragonball.cell.util.MyMapper;
 
 public interface ResourcePoolMapper extends MyMapper<ResourcePool> {
 }

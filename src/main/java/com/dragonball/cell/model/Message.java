@@ -1,76 +1,76 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import java.util.Date;
 import javax.persistence.*;
 
 public class Message {
     /**
-     * Ö÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½
      */
     @Id
     @Column(name = "msg_id")
     private Integer msgId;
 
     /**
-     * ÍÆËÍÊ±¼ä
+     * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      */
     @Column(name = "push_date")
     private Date pushDate;
 
     /**
-     * ÍÆËÍÏûÏ¢
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
      */
     private String comment;
 
     /**
-     * »ñÈ¡Ö÷¼ü
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return msg_id - Ö÷¼ü
+     * @return msg_id - ï¿½ï¿½ï¿½ï¿½
      */
     public Integer getMsgId() {
         return msgId;
     }
 
     /**
-     * ÉèÖÃÖ÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param msgId Ö÷¼ü
+     * @param msgId ï¿½ï¿½ï¿½ï¿½
      */
     public void setMsgId(Integer msgId) {
         this.msgId = msgId;
     }
 
     /**
-     * »ñÈ¡ÍÆËÍÊ±¼ä
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      *
-     * @return push_date - ÍÆËÍÊ±¼ä
+     * @return push_date - ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      */
     public Date getPushDate() {
         return pushDate;
     }
 
     /**
-     * ÉèÖÃÍÆËÍÊ±¼ä
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      *
-     * @param pushDate ÍÆËÍÊ±¼ä
+     * @param pushDate ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
      */
     public void setPushDate(Date pushDate) {
         this.pushDate = pushDate;
     }
 
     /**
-     * »ñÈ¡ÍÆËÍÏûÏ¢
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
      *
-     * @return comment - ÍÆËÍÏûÏ¢
+     * @return comment - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
      */
     public String getComment() {
         return comment;
     }
 
     /**
-     * ÉèÖÃÍÆËÍÏûÏ¢
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
      *
-     * @param comment ÍÆËÍÏûÏ¢
+     * @param comment ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
      */
     public void setComment(String comment) {
         this.comment = comment == null ? null : comment.trim();

@@ -126,4 +126,24 @@ public class Template {
      * @param createDate ��������
      */
     public void setCreateDate(Date createDate) {
-        this.cr
+        this.createDate = createDate;
+    }
+
+    /**
+     * ��ȡ�ۿ���
+     *
+     * @return discount - �ۿ���
+     */
+    public Byte getDiscount() {
+        return discount;
+    }
+
+    /**
+     * �����ۿ���
+     *
+     * @param discount �ۿ���
+     */
+    public void setDiscount(Byte discount) {
+        this.discount = discount;
+    }
+}

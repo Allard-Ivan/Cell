@@ -1,7 +1,7 @@
-package com.dragonball.mapper;
+package com.dragonball.cell.mapper;
 
-import com.dragonball.model.ComputerNode;
-import com.dragonball.util.MyMapper;
+import com.dragonball.cell.model.ComputerNode;
+import com.dragonball.cell.util.MyMapper;
 
 public interface ComputerNodeMapper extends MyMapper<ComputerNode> {
 }

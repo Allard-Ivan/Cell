@@ -26,8 +26,8 @@
         <!-- MyBatis Generator -->
         <!-- Java Interface & Entity Class -->
         <targetJavaProject>${basedir}/src/main/java</targetJavaProject>
-        <targetMapperPackage>com.dragonball.mapper</targetMapperPackage>
-        <targetModelPackage>com.dragonball.model</targetModelPackage>
+        <targetMapperPackage>com.dragonball.cell.mapper</targetMapperPackage>
+        <targetModelPackage>com.dragonball.cell.model</targetModelPackage>
         <!-- XML Generate Path -->
         <targetResourcesProject>${basedir}/src/main/resources</targetResourcesProject>
         <targetXMLPackage>mapper</targetXMLPackage>
@@ -45,14 +45,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

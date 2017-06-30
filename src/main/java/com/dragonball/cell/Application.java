@@ -1,4 +1,4 @@
-package com.dragonball;
+package com.dragonball.cell;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableWebMvc
 @SpringBootApplication
-@MapperScan(basePackages = "com.dragonball.mapper")
+@MapperScan(basePackages = "com.dragonball.cell.mapper")
 public class Application {
 
 	public static void main(String[] args) {

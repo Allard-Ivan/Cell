@@ -1,4 +1,4 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import javax.persistence.*;
 

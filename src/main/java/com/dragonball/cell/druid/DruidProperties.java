@@ -1,7 +1,6 @@
-package com.dragonball.druid;
+package com.dragonball.cell.druid;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.PropertySource;
 
 /**
  * @author Allard

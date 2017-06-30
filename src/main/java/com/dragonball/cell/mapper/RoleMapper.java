@@ -1,7 +1,7 @@
-package com.dragonball.mapper;
+package com.dragonball.cell.mapper;
 
-import com.dragonball.model.Role;
-import com.dragonball.util.MyMapper;
+import com.dragonball.cell.model.Role;
+import com.dragonball.cell.util.MyMapper;
 
 public interface RoleMapper extends MyMapper<Role> {
 }

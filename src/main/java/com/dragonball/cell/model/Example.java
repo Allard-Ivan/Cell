@@ -143,4 +143,5 @@ public class Example {
      */
     public void setSpecification(String specification) {
         this.specification = specification == null ? null : specification.trim();
-  
+    }
+}

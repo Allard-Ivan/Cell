@@ -1,74 +1,74 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import javax.persistence.*;
 
 public class Network {
     /**
-     * Ö÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½
      */
     @Id
     @Column(name = "network_id")
     private Short networkId;
 
     /**
-     * ÍøÂçÃû³Æ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private String name;
 
     /**
-     * ÍøÂçĞ­Òé
+     * ï¿½ï¿½ï¿½ï¿½Ğ­ï¿½ï¿½
      */
     private String protocol;
 
     /**
-     * »ñÈ¡Ö÷¼ü
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return network_id - Ö÷¼ü
+     * @return network_id - ï¿½ï¿½ï¿½ï¿½
      */
     public Short getNetworkId() {
         return networkId;
     }
 
     /**
-     * ÉèÖÃÖ÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param networkId Ö÷¼ü
+     * @param networkId ï¿½ï¿½ï¿½ï¿½
      */
     public void setNetworkId(Short networkId) {
         this.networkId = networkId;
     }
 
     /**
-     * »ñÈ¡ÍøÂçÃû³Æ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return name - ÍøÂçÃû³Æ
+     * @return name - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public String getName() {
         return name;
     }
 
     /**
-     * ÉèÖÃÍøÂçÃû³Æ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param name ÍøÂçÃû³Æ
+     * @param name ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
     }
 
     /**
-     * »ñÈ¡ÍøÂçĞ­Òé
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ğ­ï¿½ï¿½
      *
-     * @return protocol - ÍøÂçĞ­Òé
+     * @return protocol - ï¿½ï¿½ï¿½ï¿½Ğ­ï¿½ï¿½
      */
     public String getProtocol() {
         return protocol;
     }
 
     /**
-     * ÉèÖÃÍøÂçĞ­Òé
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ­ï¿½ï¿½
      *
-     * @param protocol ÍøÂçĞ­Òé
+     * @param protocol ï¿½ï¿½ï¿½ï¿½Ğ­ï¿½ï¿½
      */
     public void setProtocol(String protocol) {
         this.protocol = protocol == null ? null : protocol.trim();

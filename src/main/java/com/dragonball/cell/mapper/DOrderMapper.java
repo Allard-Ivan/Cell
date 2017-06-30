@@ -1,7 +1,7 @@
-package com.dragonball.mapper;
+package com.dragonball.cell.mapper;
 
-import com.dragonball.model.DOrder;
-import com.dragonball.util.MyMapper;
+import com.dragonball.cell.model.DOrder;
+import com.dragonball.cell.util.MyMapper;
 
 public interface DOrderMapper extends MyMapper<DOrder> {
 }

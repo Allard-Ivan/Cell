@@ -1,100 +1,100 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import javax.persistence.*;
 
 public class Volume {
     /**
-     * Ö÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½
      */
     @Id
     @Column(name = "vl_id")
     private Integer vlId;
 
     /**
-     * Âß¼­¾í
+     * ï¿½ß¼ï¿½ï¿½ï¿½
      */
     @Column(name = "physical_volume")
     private String physicalVolume;
 
     /**
-     * ÎïÀí¾í
+     * ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     @Column(name = "logical_volume")
     private String logicalVolume;
 
     /**
-     * ÎÄ¼þÏµÍ³
+     * ï¿½Ä¼ï¿½ÏµÍ³
      */
     @Column(name = "file_system")
     private String fileSystem;
 
     /**
-     * »ñÈ¡Ö÷¼ü
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return vl_id - Ö÷¼ü
+     * @return vl_id - ï¿½ï¿½ï¿½ï¿½
      */
     public Integer getVlId() {
         return vlId;
     }
 
     /**
-     * ÉèÖÃÖ÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param vlId Ö÷¼ü
+     * @param vlId ï¿½ï¿½ï¿½ï¿½
      */
     public void setVlId(Integer vlId) {
         this.vlId = vlId;
     }
 
     /**
-     * »ñÈ¡Âß¼­¾í
+     * ï¿½ï¿½È¡ï¿½ß¼ï¿½ï¿½ï¿½
      *
-     * @return physical_volume - Âß¼­¾í
+     * @return physical_volume - ï¿½ß¼ï¿½ï¿½ï¿½
      */
     public String getPhysicalVolume() {
         return physicalVolume;
     }
 
     /**
-     * ÉèÖÃÂß¼­¾í
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½
      *
-     * @param physicalVolume Âß¼­¾í
+     * @param physicalVolume ï¿½ß¼ï¿½ï¿½ï¿½
      */
     public void setPhysicalVolume(String physicalVolume) {
         this.physicalVolume = physicalVolume == null ? null : physicalVolume.trim();
     }
 
     /**
-     * »ñÈ¡ÎïÀí¾í
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return logical_volume - ÎïÀí¾í
+     * @return logical_volume - ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public String getLogicalVolume() {
         return logicalVolume;
     }
 
     /**
-     * ÉèÖÃÎïÀí¾í
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param logicalVolume ÎïÀí¾í
+     * @param logicalVolume ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setLogicalVolume(String logicalVolume) {
         this.logicalVolume = logicalVolume == null ? null : logicalVolume.trim();
     }
 
     /**
-     * »ñÈ¡ÎÄ¼þÏµÍ³
+     * ï¿½ï¿½È¡ï¿½Ä¼ï¿½ÏµÍ³
      *
-     * @return file_system - ÎÄ¼þÏµÍ³
+     * @return file_system - ï¿½Ä¼ï¿½ÏµÍ³
      */
     public String getFileSystem() {
         return fileSystem;
     }
 
     /**
-     * ÉèÖÃÎÄ¼þÏµÍ³
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ÏµÍ³
      *
-     * @param fileSystem ÎÄ¼þÏµÍ³
+     * @param fileSystem ï¿½Ä¼ï¿½ÏµÍ³
      */
     public void setFileSystem(String fileSystem) {
         this.fileSystem = fileSystem == null ? null : fileSystem.trim();

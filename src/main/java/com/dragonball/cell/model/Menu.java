@@ -1,4 +1,4 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import javax.persistence.*;
 
@@ -68,7 +68,7 @@ public class Menu {
     }
 
     /**
-     * »ñÈ¡At least point to itself
+     * ï¿½ï¿½È¡At least point to itself
      *
      * @return parent_id - At least point to itself
      */
@@ -77,7 +77,7 @@ public class Menu {
     }
 
     /**
-     * ÉèÖÃAt least point to itself
+     * ï¿½ï¿½ï¿½ï¿½At least point to itself
      *
      * @param parentId At least point to itself
      */
@@ -86,7 +86,7 @@ public class Menu {
     }
 
     /**
-     * »ñÈ¡At least point to itself
+     * ï¿½ï¿½È¡At least point to itself
      *
      * @return parent_id_list - At least point to itself
      */
@@ -95,7 +95,7 @@ public class Menu {
     }
 
     /**
-     * ÉèÖÃAt least point to itself
+     * ï¿½ï¿½ï¿½ï¿½At least point to itself
      *
      * @param parentIdList At least point to itself
      */

@@ -1,4 +1,4 @@
-package com.dragonball.util;
+package com.dragonball.cell.util;
 
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;

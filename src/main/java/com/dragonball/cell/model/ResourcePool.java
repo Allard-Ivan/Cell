@@ -1,98 +1,98 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import javax.persistence.*;
 
 @Table(name = "resource_pool")
 public class ResourcePool {
     /**
-     * Ö÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½
      */
     @Id
     @Column(name = "pool_id")
     private Short poolId;
 
     /**
-     * Ãû³Æ
+     * ï¿½ï¿½ï¿½ï¿½
      */
     private String name;
 
     /**
-     * ÀàÐÍ
+     * ï¿½ï¿½ï¿½ï¿½
      */
     private String category;
 
     /**
-     * ÊÇ·ñÉêÇë
+     * ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private Boolean apply;
 
     /**
-     * »ñÈ¡Ö÷¼ü
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return pool_id - Ö÷¼ü
+     * @return pool_id - ï¿½ï¿½ï¿½ï¿½
      */
     public Short getPoolId() {
         return poolId;
     }
 
     /**
-     * ÉèÖÃÖ÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param poolId Ö÷¼ü
+     * @param poolId ï¿½ï¿½ï¿½ï¿½
      */
     public void setPoolId(Short poolId) {
         this.poolId = poolId;
     }
 
     /**
-     * »ñÈ¡Ãû³Æ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return name - Ãû³Æ
+     * @return name - ï¿½ï¿½ï¿½ï¿½
      */
     public String getName() {
         return name;
     }
 
     /**
-     * ÉèÖÃÃû³Æ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param name Ãû³Æ
+     * @param name ï¿½ï¿½ï¿½ï¿½
      */
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
     }
 
     /**
-     * »ñÈ¡ÀàÐÍ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return category - ÀàÐÍ
+     * @return category - ï¿½ï¿½ï¿½ï¿½
      */
     public String getCategory() {
         return category;
     }
 
     /**
-     * ÉèÖÃÀàÐÍ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param category ÀàÐÍ
+     * @param category ï¿½ï¿½ï¿½ï¿½
      */
     public void setCategory(String category) {
         this.category = category == null ? null : category.trim();
     }
 
     /**
-     * »ñÈ¡ÊÇ·ñÉêÇë
+     * ï¿½ï¿½È¡ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return apply - ÊÇ·ñÉêÇë
+     * @return apply - ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public Boolean getApply() {
         return apply;
     }
 
     /**
-     * ÉèÖÃÊÇ·ñÉêÇë
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param apply ÊÇ·ñÉêÇë
+     * @param apply ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setApply(Boolean apply) {
         this.apply = apply;

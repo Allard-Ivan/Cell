@@ -28,3 +28,4 @@ public class PageEntity {
     public void setRows(Integer rows) {
         this.rows = rows;
     }
+}

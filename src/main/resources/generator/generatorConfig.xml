@@ -10,7 +10,7 @@
         <property name="endingDelimiter" value="`"/>
 
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="com.dragonball.util.MyMapper"/>
+            <property name="mappers" value="com.dragonball.cell.util.MyMapper"/>
         </plugin>
 
         <commentGenerator>

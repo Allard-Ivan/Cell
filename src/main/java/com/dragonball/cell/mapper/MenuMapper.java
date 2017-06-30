@@ -1,7 +1,7 @@
-package com.dragonball.mapper;
+package com.dragonball.cell.mapper;
 
-import com.dragonball.model.Menu;
-import com.dragonball.util.MyMapper;
+import com.dragonball.cell.model.Menu;
+import com.dragonball.cell.util.MyMapper;
 
 public interface MenuMapper extends MyMapper<Menu> {
 }

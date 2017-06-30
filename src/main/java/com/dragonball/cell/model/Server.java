@@ -1,170 +1,170 @@
-package com.dragonball.model;
+package com.dragonball.cell.model;
 
 import java.math.BigDecimal;
 import javax.persistence.*;
 
 public class Server {
     /**
-     * Ö÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½
      */
     @Id
     @Column(name = "server_id")
     private Short serverId;
 
     /**
-     * Ö÷»úÃû³Æ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private String name;
 
     /**
-     * ¹«Íø IP
+     * ï¿½ï¿½ï¿½ï¿½ IP
      */
     @Column(name = "public_ip")
     private String publicIp;
 
     /**
-     * ÔÆÕË»§
+     * ï¿½ï¿½ï¿½Ë»ï¿½
      */
     @Column(name = "could_category")
     private String couldCategory;
 
     /**
-     * ËùÔÚÇøÓò
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private String area;
 
     /**
-     * ÊÇ·ñ¿ÉÓÃ
+     * ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
      */
     private Boolean active;
 
     /**
-     * ÒÑÓÃ¿Õ¼ä
+     * ï¿½ï¿½ï¿½Ã¿Õ¼ï¿½
      */
     @Column(name = "used_space")
     private BigDecimal usedSpace;
 
     /**
-     * »ñÈ¡Ö÷¼ü
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
-     * @return server_id - Ö÷¼ü
+     * @return server_id - ï¿½ï¿½ï¿½ï¿½
      */
     public Short getServerId() {
         return serverId;
     }
 
     /**
-     * ÉèÖÃÖ÷¼ü
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param serverId Ö÷¼ü
+     * @param serverId ï¿½ï¿½ï¿½ï¿½
      */
     public void setServerId(Short serverId) {
         this.serverId = serverId;
     }
 
     /**
-     * »ñÈ¡Ö÷»úÃû³Æ
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return name - Ö÷»úÃû³Æ
+     * @return name - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public String getName() {
         return name;
     }
 
     /**
-     * ÉèÖÃÖ÷»úÃû³Æ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param name Ö÷»úÃû³Æ
+     * @param name ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
     }
 
     /**
-     * »ñÈ¡¹«Íø IP
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ IP
      *
-     * @return public_ip - ¹«Íø IP
+     * @return public_ip - ï¿½ï¿½ï¿½ï¿½ IP
      */
     public String getPublicIp() {
         return publicIp;
     }
 
     /**
-     * ÉèÖÃ¹«Íø IP
+     * ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ IP
      *
-     * @param publicIp ¹«Íø IP
+     * @param publicIp ï¿½ï¿½ï¿½ï¿½ IP
      */
     public void setPublicIp(String publicIp) {
         this.publicIp = publicIp == null ? null : publicIp.trim();
     }
 
     /**
-     * »ñÈ¡ÔÆÕË»§
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ë»ï¿½
      *
-     * @return could_category - ÔÆÕË»§
+     * @return could_category - ï¿½ï¿½ï¿½Ë»ï¿½
      */
     public String getCouldCategory() {
         return couldCategory;
     }
 
     /**
-     * ÉèÖÃÔÆÕË»§
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½
      *
-     * @param couldCategory ÔÆÕË»§
+     * @param couldCategory ï¿½ï¿½ï¿½Ë»ï¿½
      */
     public void setCouldCategory(String couldCategory) {
         this.couldCategory = couldCategory == null ? null : couldCategory.trim();
     }
 
     /**
-     * »ñÈ¡ËùÔÚÇøÓò
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @return area - ËùÔÚÇøÓò
+     * @return area - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public String getArea() {
         return area;
     }
 
     /**
-     * ÉèÖÃËùÔÚÇøÓò
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
-     * @param area ËùÔÚÇøÓò
+     * @param area ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public void setArea(String area) {
         this.area = area == null ? null : area.trim();
     }
 
     /**
-     * »ñÈ¡ÊÇ·ñ¿ÉÓÃ
+     * ï¿½ï¿½È¡ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
      *
-     * @return active - ÊÇ·ñ¿ÉÓÃ
+     * @return active - ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
      */
     public Boolean getActive() {
         return active;
     }
 
     /**
-     * ÉèÖÃÊÇ·ñ¿ÉÓÃ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
      *
-     * @param active ÊÇ·ñ¿ÉÓÃ
+     * @param active ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
      */
     public void setActive(Boolean active) {
         this.active = active;
     }
 
     /**
-     * »ñÈ¡ÒÑÓÃ¿Õ¼ä
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ã¿Õ¼ï¿½
      *
-     * @return used_space - ÒÑÓÃ¿Õ¼ä
+     * @return used_space - ï¿½ï¿½ï¿½Ã¿Õ¼ï¿½
      */
     public BigDecimal getUsedSpace() {
         return usedSpace;
     }
 
     /**
-     * ÉèÖÃÒÑÓÃ¿Õ¼ä
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿Õ¼ï¿½
      *
-     * @param usedSpace ÒÑÓÃ¿Õ¼ä
+     * @param usedSpace ï¿½ï¿½ï¿½Ã¿Õ¼ï¿½
      */
     public void setUsedSpace(BigDecimal usedSpace) {
         this.usedSpace = usedSpace;

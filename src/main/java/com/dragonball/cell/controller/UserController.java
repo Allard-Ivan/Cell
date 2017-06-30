@@ -1,13 +1,10 @@
-package com.dragonball.controller;
+package com.dragonball.cell.controller;
 
-import com.alibaba.fastjson.JSONObject;
-import com.dragonball.model.User;
-import com.dragonball.service.UserService;
+import com.dragonball.cell.model.User;
+import com.dragonball.cell.service.UserService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
