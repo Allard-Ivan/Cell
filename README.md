@@ -1,1 +1,1 @@
-Spring Boot Integration MyBatis
+Spring Boot Seed Project
