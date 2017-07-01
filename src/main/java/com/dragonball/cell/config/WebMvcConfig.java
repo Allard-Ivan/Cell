@@ -51,7 +51,8 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         fastJsonConfig.setSerializerFeatures(SerializerFeature.PrettyFormat,
                 SerializerFeature.WriteMapNullValue,
                 SerializerFeature.WriteNullStringAsEmpty,
-                SerializerFeature.WriteNullNumberAsZero);
+                SerializerFeature.WriteNullNumberAsZero,
+                SerializerFeature.WriteDateUseDateFormat);
         List<MediaType> fastMediaTypes = new ArrayList<>();
         fastMediaTypes.add(MediaType.APPLICATION_JSON_UTF8);
         converter.setSupportedMediaTypes(fastMediaTypes);

@@ -3,14 +3,14 @@ package com.dragonball.cell.model;
 /**
  * Created by Allard-PC on 2017/7/1.
  */
-public class Model {
+public class Person {
     private String name;
     private int age;
 
-    public Model() {
+    public Person() {
     }
 
-    public Model(String name, int age) {
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }

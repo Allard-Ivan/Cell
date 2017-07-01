@@ -23,14 +23,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-        <!-- MyBatis Generator -->
-        <!-- Java Interface & Entity Class -->
-        <targetJavaProject>${basedir}/src/main/java</targetJavaProject>
-        <targetMapperPackage>com.dragonball.cell.mapper</targetMapperPackage>
-        <targetModelPackage>com.dragonball.cell.model</targetModelPackage>
-        <!-- XML Generate Path -->
-        <targetResourcesProject>${basedir}/src/main/resources</targetResourcesProject>
-        <targetXMLPackage>mapper</targetXMLPackage>
         <!-- Dependency Version -->
         <mysql.version>6.0.6</mysql.version>
         <druid.version>1.1.0</druid.version>

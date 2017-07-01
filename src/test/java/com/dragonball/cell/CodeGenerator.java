@@ -38,15 +38,15 @@ public class CodeGenerator {
     private static final String DATE = new SimpleDateFormat("yyyy/MM/dd").format(new Date());//@date
 
     public static void main(String[] args) {
-        genCode("table_name");
+        genCode("d_alarm", "d_cpt_node", "d_order", "d_role_menu", "d_example", "d_menu", "d_message", "d_mirror", "d_network", "d_rc_pool", "d_role", "d_server", "d_template", "d_user", "d_volume");
     }
 
     private static void genCode(String... tableNames) {
         for (String tableName : tableNames) {
-            //根据需求生成，不需要的注掉，模板有问题的话可以自己修改。
-            genModelAndMapper(tableName);
-            genService(tableName);
-            genController(tableName);
+            //轻易不要打开注释，切记切记！！！ 根据需求生成，不需要的注掉，模板有问题的话可以自己修改。
+//            genModelAndMapper(tableName);
+//            genService(tableName);
+//            genController(tableName);
         }
     }
 
@@ -154,7 +154,7 @@ public class CodeGenerator {
             Map<String, Object> data = new HashMap<>();
             data.put("date", DATE);
             data.put("author", AUTHOR);
-            data.put("baseRequestMapping", tableNameConvertMappingPath(tableName));
+            data.put("baseRequestMapping", tableNameConvertMappingPath(tableName.substring(2, tableName.length())));
             String modelNameUpperCamel = tableNameConvertUpperCamel(tableName);
             data.put("modelNameUpperCamel", modelNameUpperCamel);
             data.put("modelNameLowerCamel", tableNameConvertLowerCamel(tableName));
