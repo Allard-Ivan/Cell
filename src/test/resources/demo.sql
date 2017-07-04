@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50718
 File Encoding         : 65001
 
-Date: 2017-07-01 20:26:06
+Date: 2017-07-04 17:26:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -35,7 +35,7 @@ CREATE TABLE `d_alarm` (
 -- ----------------------------
 DROP TABLE IF EXISTS `d_cpt_node`;
 CREATE TABLE `d_cpt_node` (
-  `id` smallint(5) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `name` varchar(50) NOT NULL COMMENT '节点名称',
   `server_tag` varchar(50) NOT NULL COMMENT '服务编号',
   `category` enum('Hadoop','Spark') NOT NULL COMMENT '节点类型',
@@ -64,7 +64,7 @@ INSERT INTO `d_cpt_node` VALUES ('14', 'dsa', 'winxp-sp3-32bit', 'Hadoop', '待�
 -- ----------------------------
 DROP TABLE IF EXISTS `d_example`;
 CREATE TABLE `d_example` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
   `service_tag` varchar(50) NOT NULL COMMENT '服务编号',
   `intranet` varchar(25) NOT NULL COMMENT '内网',
   `public_ip` varchar(25) NOT NULL COMMENT '公网IP',
@@ -112,7 +112,7 @@ INSERT INTO `d_example` VALUES ('70', 'winxp-sp3-32bit', '46345', '45', '运行�
 -- ----------------------------
 DROP TABLE IF EXISTS `d_menu`;
 CREATE TABLE `d_menu` (
-  `id` smallint(4) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(25) NOT NULL,
   `level` tinyint(1) unsigned NOT NULL,
   `parent_id` smallint(4) unsigned NOT NULL COMMENT 'At least point to itself',
@@ -168,7 +168,7 @@ INSERT INTO `d_message` VALUES ('26', '2017-06-23 15:07:50', 'ccccc');
 -- ----------------------------
 DROP TABLE IF EXISTS `d_mirror`;
 CREATE TABLE `d_mirror` (
-  `id` smallint(5) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `name` varchar(50) NOT NULL COMMENT '镜像名称',
   `mirror_system` varchar(100) NOT NULL COMMENT '镜像系统',
   `iso_file` text NOT NULL COMMENT '镜像 iso 文件',
@@ -208,7 +208,7 @@ INSERT INTO `d_mirror` VALUES ('24', 'new_windows', 'Windows7win7sp2.ISO', 'new_
 -- ----------------------------
 DROP TABLE IF EXISTS `d_network`;
 CREATE TABLE `d_network` (
-  `id` smallint(5) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `name` varchar(50) NOT NULL COMMENT '网络名称',
   `protocol` varchar(255) NOT NULL COMMENT '网络协议',
   PRIMARY KEY (`id`)
@@ -298,7 +298,7 @@ INSERT INTO `d_order` VALUES ('35', '123123', '123', '2017-06-23 00:00:00', 'T',
 -- ----------------------------
 DROP TABLE IF EXISTS `d_rc_pool`;
 CREATE TABLE `d_rc_pool` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
   `name` varchar(50) NOT NULL COMMENT '名称',
   `category` enum('public','private') NOT NULL DEFAULT 'public' COMMENT '类型',
   `apply` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否申请',
@@ -369,7 +369,7 @@ CREATE TABLE `d_role_menu` (
 -- ----------------------------
 DROP TABLE IF EXISTS `d_server`;
 CREATE TABLE `d_server` (
-  `id` smallint(5) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `name` varchar(50) NOT NULL COMMENT '主机名称',
   `public_ip` varchar(50) NOT NULL DEFAULT '' COMMENT '公网 IP',
   `could_category` varchar(25) NOT NULL COMMENT '云账户',
@@ -391,7 +391,7 @@ INSERT INTO `d_server` VALUES ('3', '测试3', '172.8.6.9', 'zhanghao111', '1号
 -- ----------------------------
 DROP TABLE IF EXISTS `d_template`;
 CREATE TABLE `d_template` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
   `name` varchar(50) NOT NULL COMMENT '服务名称',
   `toll_year` varchar(100) NOT NULL COMMENT '年收费标准',
   `toll_month` varchar(100) NOT NULL COMMENT '月收费标准',
@@ -443,7 +443,7 @@ INSERT INTO `d_template` VALUES ('34', 'asdf', 'asdf', 'asfd', '2017-06-07 00:00
 -- ----------------------------
 DROP TABLE IF EXISTS `d_user`;
 CREATE TABLE `d_user` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `role_id` char(4) DEFAULT '',
   `email` varchar(50) DEFAULT '',
   `phone` varchar(20) NOT NULL,
