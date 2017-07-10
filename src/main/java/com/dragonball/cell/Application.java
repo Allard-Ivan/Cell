@@ -1,6 +1,5 @@
 package com.dragonball.cell;
 
-import com.dragonball.frieza.HelloService;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -19,18 +18,6 @@ import java.util.List;
 @SpringBootApplication
 @MapperScan(basePackages = "com.dragonball.cell.dao")
 public class Application {
-
-//	@RequestMapping("/")
-//    public String index(Model model) {
-//        Person single = new Person("Allard", 20);
-//        List<Person> people = new ArrayList<>();
-//        for (int i = 0; i < 5; i++) {
-//            people.add(new Person("Jobs" + i, i + 30));
-//        }
-//        model.addAttribute("singlePerson", single);
-//        model.addAttribute("people", people);
-//        return "index";
-//    }
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
